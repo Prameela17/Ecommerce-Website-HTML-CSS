@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Ecommerce Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    /><link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="https://i.ibb.co/kDVwgwp/logo.png" alt="RedStore" width="125px" /></a>
+    </div>
+    <nav>
+      <ul id="MenuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="account.html">Account</a></li>
+      </ul>
+    </nav>
+    <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
+    <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" onclick="menutoggle()" />
+  </div>
+</div>
+
+<div class="small-container">
+  <div class="row row-2">
+    <h2>All Products</h2>
+    <select>
+      <option value="">Default Shorting</option>
+      <option value="">Short by price</option>
+      <option value="">Short by popularity</option>
+      <option value="">Short by rating</option>
+      <option value="">Short by sale</option>
+    </select>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <img src="https://i.pinimg.com/originals/ed/2f/09/ed2f095ee3df207b81d1f8548357069f.jpg" alt="" />
+      <h4>Red Printed T-shirt</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹500.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="https://img.ltwebstatic.com/images3_pi/2021/03/01/1614583989bd915a775d8f49ceb023dc74967b72d2_thumbnail_405x552.jpg" alt="" />
+      <h4>Women's Sneakers</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹399.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/productimage/2018/8/23/262d60e6-5cc3-476a-9259-164c146a6e2a1535023875524-1.jpg" alt="" />
+      <h4>DUCK Men Grey Track Pant</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>₹700.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="https://i.pinimg.com/originals/1b/bf/79/1bbf79100eba46d83da13f7c7031a40d.jpg" alt="" />
+      <h4>Faux Leather T-shirt</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹899.00</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <img src="https://i.ibb.co/0cMfpcr/product-4.jpg" alt="" />
+      <h4>Puma Blue T-shirt</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹649.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="https://i.ibb.co/b7ZVzYr/product-2.jpg" alt="" />
+      <h4>HRX Shoes</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹450.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="https://i.ibb.co/KsMVr26/product-3.jpg" alt="" />
+      <h4>Reebok Tracksuit</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>₹400.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="https://i.ibb.co/47Sk9QL/product-1.jpg" alt="" />
+      <h4>Puma Red T-shirt</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹600.00</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <img src="https://i.ibb.co/bQ5t8bR/product-5.jpg" alt="" />
+      <h4>HRX Sneakers For Men</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹500.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="https://i.ibb.co/vVpTyBD/product-6.jpg" alt="" />
+      <h4>Puma Black T-shirt</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹709.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="https://i.ibb.co/hR5FGwH/product-7.jpg" alt="" />
+      <h4>HRX Pack of 3 Socks</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>₹699.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="https://i.ibb.co/QfCgdXZ/product-8.jpg" alt="" />
+      <h4>Fossil Mens Black Watch</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹1200.00</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <img src="https://i.ibb.co/nw5xZwk/product-9.jpg" alt="" />
+      <h4>Blue Watch</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹300.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="https://i.ibb.co/9HCsmjf/product-10.jpg" alt="" />
+      <h4>HRX Running Shoes</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹454.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="https://i.ibb.co/JQ2MBHR/product-11.jpg" alt="" />
+      <h4>PG1 Womens Sports Shoes</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>₹340.00</p>
+    </div>
+
+    <div class="col-4">
+      <img src="https://i.ibb.co/nRZMs6Y/product-12.jpg" alt="" />
+      <h4>LOTTO Men Track Pant</h4>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>₹850.00</p>
+    </div>
+  </div>
+
+  <div class="page-btn">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>&#8594;</span>
+  </div>
+</div>
+
+<!-- cart items details -->
+
+<div class="small-container1">
+  <h2>Cart Items</h2><br><br>
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Quantity</th>
+      <th>Subtotal</th>
+    </tr>
+
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="https://i.ibb.co/B3vYjvw/buy-1.jpg" alt="" />
+          <div>
+            <p>Puma Red T-Shirt</p>
+            <small>Price ₹600.00</small>
+            <br />
+            <a href="#">Remove</a>
+          </div>
+        </div>
+      </td>
+      <td><input type="number" value="1" /></td>
+      <td>₹600.00</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="https://i.ibb.co/qmSHWx7/buy-2.jpg" alt="" />
+          <div>
+            <p>HRX Shoes</p>
+            <small>Price ₹450.00</small>
+            <br />
+            <a href="#">Remove</a>
+          </div>
+        </div>
+      </td>
+      <td><input type="number" value="1" /></td>
+      <td>₹450.00</td>
+    </tr>
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="https://i.ibb.co/QfCgdXZ/product-8.jpg" alt="" />
+          <div>
+            <p>Fossil Mens Black Watch</p>
+            <small>Price ₹1200.00</small>
+            <br />
+            <a href="#">Remove</a>
+          </div>
+        </div>
+      </td>
+      <td><input type="number" value="1" /></td>
+      <td>₹1200.00</td>
+    </tr>
+  </table>
+
+  <div class="total-price">
+    <table>
+      <tr>
+        <td>Subtotal</td>
+        <td>₹2250.00</td>
+      </tr>
+      <tr>
+        <td>Tax</td>
+        <td>₹15.00</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>₹2265.00</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<br><br>
+
+<!-- Footer -->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+        <h3>Download Our App</h3>
+        <p>Download App for Android and iso mobile phone.</p>
+        <div class="app-logo">
+          <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+          <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
+        </div>
+      </div>
+
+      <div class="footer-col-2">
+        <img src="https://i.ibb.co/j3FNGj7/logo-white.png" alt="" />
+        <p>
+          Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+          Sports Accessible to the Many.
+        </p>
+      </div>
+
+      <div class="footer-col-3">
+        <h3>Useful Links</h3>
+        <ul>
+          <li>Coupons</li>
+          <li>Blog Post</li>
+          <li>Return Policy</li>
+          <li>Join Affiliate</li>
+        </ul>
+      </div>
+
+      <div class="footer-col-4">
+        <h3>Follow us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>YouTube</li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright">Copyright &copy; 2021 - Red Store</p>
+  </div>
+</div>
+
+<!-- js for toggle menu -->
+<script>
+  var MenuItems = document.getElementById('MenuItems');
+  MenuItems.style.maxHeight = '0px';
+
+  function menutoggle() {
+    if (MenuItems.style.maxHeight == '0px') {
+      MenuItems.style.maxHeight = '200px';
+    } else {
+      MenuItems.style.maxHeight = '0px';
+    }
+  }
+</script>
+<!-- partial -->
+  
+</body>
+</html>
